@@ -96,6 +96,17 @@ For the automated way, we need to download a key from Kaggle. Let’s do that fi
 3.	Click the “Create New API Token” button. A file by the name kaggle.json will be downloaded.
 4.	Copy the file and place it in the api_keys folder in the downloaded code folder.
 Now that we have the kaggle.json downloaded and placed in the right folder, let’s look at the three methods to download data:
+
+# [HS] The above din't work for me. What worked was:
+pip install kagglehub
+
+Then run the below in python:
+import kagglehub
+# Download latest version
+path = kagglehub.dataset_download("jeanmidev/smart-meters-in-london")
+
+this will download the data on your local system in .cache\kagglehub\datasets\jeanmidev\smart-meters-in-london\versions\21  -> pick the data from here
+-------------------------------------------------------------------------
 ## Method 1: Automated Download
 1.	Activate the environment using conda activate modern_ts
 2.	Run the provided script from the root directory of downloaded code
