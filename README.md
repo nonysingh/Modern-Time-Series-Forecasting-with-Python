@@ -101,9 +101,13 @@ Now that we have the kaggle.json downloaded and placed in the right folder, letâ
 pip install kagglehub
 
 Then run the below in python:
+
 	import kagglehub
+
 Download latest version:
+
 	path = kagglehub.dataset_download("jeanmidev/smart-meters-in-london")
+
 this will download the data on your local system in .cache\kagglehub\datasets\jeanmidev\smart-meters-in-london\versions\21  -> pick the data from here 
 
 -------------------------------------------------------------------------
